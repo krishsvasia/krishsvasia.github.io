@@ -1,14 +1,11 @@
 ---
 layout: default
-title: Home
+title: Krish Vasia
 ---
-
-# Krish Vasia
-### Artificial Intelligence and Computer Science Undergraduate
-
 I am an Artificial Intelligence and Computer Science student at the University of Birmingham.
 
-**Location**: Birmingham, UK
-**Email**: krishsvasia@gmail.com
+**Location**: Birmingham, UK  
+**Email**: krishsvasia@gmail.com  
 **Links**: [LinkedIn](https://www.linkedin.com/in/krishvasia/) | [GitHub](https://github.com/krishsvasia)
+
 ---
