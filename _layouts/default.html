@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     
     <style>
-      /* The Top Navigation Bar */
+      /* The Top Navigation Bar Container */
       .top-nav {
-        background-color: #0d1117;
+        background-color: #0d1117; /* Always Dark Grey */
         border-bottom: 1px solid #30363d;
         padding: 15px 0;
         text-align: center;
@@ -19,30 +19,24 @@
         top: 0;
         z-index: 1000;
         box-shadow: 0 2px 10px rgba(0,0,0,0.3);
-        transition: background-color 0.3s ease;
       }
 
-      /* Hover: The whole bar turns blue */
-      .top-nav:hover {
-        background-color: #1f6feb; 
-      }
-
-      /* The Links */
+      /* The Links (Buttons) */
       .top-nav a {
-        color: #c9d1d9;
+        color: #c9d1d9; /* Light Text */
         text-decoration: none;
         font-weight: bold;
         font-size: 1.05rem;
-        margin: 0 20px;
-        padding: 5px 10px;
+        margin: 0 10px;
+        padding: 8px 15px; /* Bigger click area */
         border-radius: 6px;
-        transition: background 0.2s, color 0.2s;
+        transition: background-color 0.2s, color 0.2s;
       }
 
-      /* Hover: Links turn white with a slight background tint */
+      /* Hover: ONLY the link turns Blue */
       .top-nav a:hover {
-        background-color: rgba(255, 255, 255, 0.2); 
-        color: #ffffff;
+        background-color: #1f6feb; /* The "View Code" Blue */
+        color: #ffffff; /* Text turns white */
         text-decoration: none;
       }
 
