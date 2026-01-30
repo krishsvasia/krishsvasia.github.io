@@ -5,59 +5,48 @@ permalink: /projects/
 ---
 
 <style>
-  /* 1. The Container: 3 Columns */
   .project-grid {
     display: grid;
-    /* Forces exactly 3 equal columns. */
-    /* minmax(250px, 1fr) means they won't get smaller than 250px before stacking. */
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 25px; /* Nice spacing between cards */
     margin-bottom: 40px;
   }
 
-  /* 2. The Cards: Dark Mode & Aesthetics */
-  .project-card {
-    /* DARK MODE COLORS */
-    background-color: #161b22; /* Deep dark grey */
-    border: 1px solid #30363d; /* Subtle dark border */
+  .project-card 
+    background-color: #161b22;
+    border: 1px solid #30363d;
     
-    /* SHAPE & SPACING ("Less Rectangular") */
-    border-radius: 16px; /* Very round corners */
-    padding: 25px; /* internal breathing room */
-    box-shadow: 0 4px 12px rgba(0,0,0,0.2); /* Soft shadow for depth */
+    border-radius: 16px;
+    padding: 25px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
     
-    /* LAYOUT */
     display: flex;
     flex-direction: column;
-    height: 100%; /* Ensures cards in the same row are equal height */
+    height: 100%;
     transition: all 0.2s ease-in-out;
   }
 
-  /* Hover Effect: Pop up and glow blue */
   .project-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 12px 20px rgba(0,0,0,0.3);
-    border-color: #58a6ff; /* GitHub Blue highlight */
+    border-color: #58a6ff;
   }
 
-  /* 3. Typography Controls */
   .project-card h3 {
     margin-top: 15px;
     margin-bottom: 10px;
     font-size: 1.25rem;
-    color: #ffffff; /* Bright white titles */
+    color: #ffffff;
   }
 
-  /* SMALLER DESCRIPTION TEXT */
   .desc-text {
-    font-size: 0.9rem; /* Smaller than normal text */
+    font-size: 0.9rem;
     line-height: 1.5;
-    color: #8b949e; /* Slightly dimmed text */
-    flex-grow: 1; /* Pushes the link button to the bottom */
+    color: #8b949e;
+    flex-grow: 1;
     margin-bottom: 20px;
   }
 
-  /* Tech Stack text */
   .tech-stack {
     font-size: 0.85rem;
     font-weight: bold;
@@ -65,23 +54,20 @@ permalink: /projects/
     margin-bottom: 15px;
   }
 
-  /* 4. Tags & Buttons */
   .status-tag {
     display: inline-block;
     padding: 4px 10px;
-    border-radius: 20px; /* Capsule shape */
+    border-radius: 20px;
     font-size: 0.75em;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.5px;
   }
   
-  /* Tag Colors for Dark Mode */
   .tag-wip { background: rgba(210, 153, 34, 0.2); color: #d29922; border: 1px solid #d29922; }
   .tag-planned { background: rgba(139, 148, 158, 0.2); color: #8b949e; border: 1px solid #8b949e; }
   .tag-done { background: rgba(46, 160, 67, 0.2); color: #3fb950; border: 1px solid #3fb950; }
 
-  /* Custom Link Button */
   .card-link {
     display: block;
     text-align: center;
