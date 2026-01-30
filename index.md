@@ -43,9 +43,9 @@ title: Home
       </span>
     </div>
     <div>
-      <strong style="color: #c9d1d9;">UKMT Senior Maths Challenge (Gold)</strong><br>
+      <strong style="color: #c9d1d9;">3x UKMT Maths Challenge Gold Award</strong><br>
       <span style="color: #8b949e; font-size: 0.9rem;">
-        Top 10% of participants nationwide.
+        Top 8% of participants nationwide.
       </span>
     </div>
   </div>
