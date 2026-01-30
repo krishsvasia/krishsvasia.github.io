@@ -97,7 +97,7 @@ permalink: /projects/
 
 </style>
 
-<h2>🚀 Engineering Projects</h2>
+<h2>Projects</h2>
 
 <div class="project-grid">
 
@@ -114,11 +114,11 @@ permalink: /projects/
   <div class="project-card">
       <div>
         <span class="status-tag tag-wip">Completed</span>
-        <h3>Vector Kalman Filter</h3>
-        <p class="desc-text">Statistical arbitrage strategy using EM algorithm for noise learning.</p>
-        <p class="tech-stack">Python, Pandas, NumPy</p>
+        <h3>Adaptive Kalman Filter</h3>
+        <p class="desc-text">Statistical arbitrage strategy using an adaptive noise algorithm for learning. Other features include: circuit breaker logic, multiple pair tracking, and a transaction cost engine.</p>
+        <p class="tech-stack">Python • Pandas • NumPy</p>
       </div>
-      <a href="#" class="card-link">View Research →</a>
+      <a href="https://github.com/krishsvasia/kalman-filter-pairs-trading" class="card-link">View Code →</a>
     </div>
 
 </div>
