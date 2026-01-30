@@ -71,21 +71,20 @@ permalink: /projects/
 <div class="project-grid">
 
   <div class="project-card">
-    <span class="status-tag tag-wip">🚧 In Progress</span>
-    <h3>[Lib-MarketData] Zero-Copy Parser</h3>
+    <span class="status-tag tag-wip"> In Progress</span>
+    <h3>Zero-Copy Parser</h3>
     <p>A high-throughput C++20 library for parsing ITCH-style binary market data. Benchmarking <code>mmap</code> vs standard I/O.</p>
     <p><strong>Tech:</strong> C++, Linux API, Perf</p>
     <a href="#">View Code →</a>
   </div>
 
-  <div class="project-card">
-    <span class="status-tag tag-planned">⏳ Planned</span>
-    <h3>[Institutional Suite] Trading Engine</h3>
-    <p>End-to-end matching engine with TCP Order Entry and Risk Gateways. Designed for deterministic latency.</p>
-    <p><strong>Tech:</strong> Lock-free Queues, UDP, TCP</p>
-    <a href="#">Read Architecture →</a>
+<div class="project-card">
+    <span class="status-tag tag-done">✅ Completed</span>
+    <h3>Adaptive Kalman Filter</h3>
+    <p>A statistical arbitrage engine using a <strong>Vector Kalman Filter</strong> for multi-pair tracking.</p>
+    <p><strong>Tech:</strong> Python, NumPy, Pandas, Monte Carlo</p>
+    <a href="#">View Analytics Dashboard →</a>
   </div>
-
 </div>
 
 <hr style="border-color: #30363d; margin: 40px 0;">
