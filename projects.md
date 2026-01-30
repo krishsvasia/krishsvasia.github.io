@@ -5,68 +5,39 @@ permalink: /projects/
 ---
 
 <style>
+/* 1. The Container: Force 3 Columns */
   .project-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: space-between;
-    margin-top: 20px;
+    display: grid;
+    /* This creates exactly 3 equal columns */
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; /* Space between cards */
+    margin-bottom: 40px;
   }
 
+  /* 2. The Cards: Reset width */
   .project-card {
-    background-color: #161b22; /* Dark card background */
-    border: 1px solid #30363d; /* Subtle border */
-    border-radius: 8px;
-    padding: 24px;
-    width: 48%; /* Two cards per row */
+    background: #ffffff; /* Use #161b22 for Dark Mode */
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    padding: 20px;
+    /* Do NOT set width here, the Grid handles it */
+    width: auto; 
     box-sizing: border-box;
-    transition: transform 0.2s, border-color 0.2s;
-    margin-bottom: 20px;
+    transition: transform 0.2s;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
   }
 
-  /* Hover Effect */
-  .project-card:hover {
-    transform: translateY(-3px);
-    border-color: #58a6ff; /* Blue border on hover */
-  }
+  /* 3. Mobile Protection: Stack them on phones */
+  @media (max-width: 900px) {
+    .project-grid {
+      /* On tablets/phones, switch to 1 column so they don't get squished */
+      grid-template-columns: 1fr; 
+    }
+  }</style>
 
-  /* Typography inside cards */
-  .project-card h3 {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    color: #58a6ff; /* Blue Title */
-  }
-
-  .project-card p {
-    color: #8b949e; /* Grey text */
-    font-size: 0.95em;
-    flex-grow: 1; /* Pushes the link to the bottom */
-  }
-
-  /* Status Tags */
-  .status-tag {
-    display: inline-block;
-    padding: 2px 10px;
-    border-radius: 12px;
-    font-size: 0.75em;
-    font-weight: bold;
-    text-transform: uppercase;
-    width: fit-content;
-  }
-  
-  .tag-wip { background: #d29922; color: #0d1117; }      /* Yellow/Gold */
-  .tag-planned { background: #6e7681; color: #ffffff; }  /* Grey */
-  .tag-done { background: #238636; color: #ffffff; }     /* Green */
-
-  /* Mobile: Stack them 1 per row */
-  @media (max-width: 768px) {
-    .project-card { width: 100%; }
-  }
-</style>
-
-<h2>🚀 Engineering Projects</h2>
+<h2>Engineering Projects</h2>
 
 <div class="project-grid">
 
@@ -79,7 +50,7 @@ permalink: /projects/
   </div>
 
 <div class="project-card">
-    <span class="status-tag tag-done">✅ Completed</span>
+    <span class="status-tag tag-done">Completed</span>
     <h3>Adaptive Kalman Filter</h3>
     <p>A statistical arbitrage engine using a <strong>Vector Kalman Filter</strong> for multi-pair tracking.</p>
     <p><strong>Tech:</strong> Python, NumPy, Pandas, Monte Carlo</p>
@@ -89,12 +60,12 @@ permalink: /projects/
 
 <hr style="border-color: #30363d; margin: 40px 0;">
 
-<h2>🎓 Certifications</h2>
+<h2>Certifications</h2>
 
 <div class="project-grid">
   
   <div class="project-card">
-    <span class="status-tag tag-done">✅ Completed</span>
+    <span class="status-tag tag-done">Completed</span>
     <h3>Akuna Capital: Options 101</h3>
     <p>Deep dive into Options pricing models, The Greeks (Delta/Gamma), and Call/Put parity arbitrage.</p>
     <p><strong>Focus:</strong> Domain Knowledge</p>
