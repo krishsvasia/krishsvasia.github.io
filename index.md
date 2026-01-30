@@ -14,7 +14,7 @@ title: Home
     <p style="margin: 0; line-height: 1.8;">
       <b>Location:</b> Birmingham, UK<br>
       <b>Email:</b> <a href="mailto:krishsvasia@gmail.com">krishsvasia@gmail.com</a><br>
-      <b>Links:</b> <a href="https://www.linkedin.com/in/krishvasia/">LinkedIn</a> | <a href="https://github.com/krishsvasia">GitHub</a> | <a href="./Resume.pdf">Download CV</a>
+      <b>Links:</b> <a href="https://www.linkedin.com/in/krishvasia/">LinkedIn</a> | <a href="https://github.com/krishsvasia">GitHub</a> | <a href="./CV.pdf">Download CV</a>
     </p>
   </div>
 </div>
