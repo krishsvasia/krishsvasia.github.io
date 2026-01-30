@@ -17,7 +17,8 @@ body {
   background-image: linear-gradient(120deg, #161b22, #0d1117);
   background-color: #0d1117;
   padding: 3rem 4rem;
-  
+}
+
 h1, h2, h3, h4, h5, h6, 
 .project-name, .project-tagline {
   color: #ffffff !important;
@@ -27,6 +28,7 @@ a {
   color: #58a6ff !important;
   text-decoration: none;
 }
+
 a:hover {
   text-decoration: underline;
 }
