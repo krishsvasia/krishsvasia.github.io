@@ -99,7 +99,7 @@ permalink: /projects/
 
   <div class="project-card">
       <div>
-        <span class="status-tag tag-wip">Completed</span>
+        <span class="status-tag tag-wip">In Progress</span>
         <h3>Adaptive Kalman Filter</h3>
         <p class="desc-text">Statistical arbitrage strategy using an adaptive noise algorithm for learning. Also includes circuit breaker logic and a transaction cost engine.</p>
         <p class="tech-stack">Python • Pandas • NumPy</p>
@@ -122,6 +122,7 @@ permalink: /projects/
       <p class="desc-text">Deep dive into derivatives pricing, Call/Put Parity, and The Greeks (Delta/Gamma) for risk management logic.</p>
       <p class="tech-stack">Domain Knowledge • Finance</p>
     </div>
+    <a href="#" class="card-link">View Certificate →</a>
   </div>
 
 </div>
