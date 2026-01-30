@@ -9,41 +9,39 @@
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     
     <style>
-      /* The Bar Container */
+      /* The Top Navigation Bar */
       .top-nav {
-        background-color: #0d1117; /* Very Dark Grey */
+        background-color: #0d1117;
         border-bottom: 1px solid #30363d;
         padding: 15px 0;
-        text-align: center; /* Center the links */
-        position: sticky; /* Sticks to top when scrolling */
+        text-align: center;
+        position: sticky;
         top: 0;
         z-index: 1000;
         box-shadow: 0 2px 10px rgba(0,0,0,0.3);
-        
-        /* ADDED: Smooth transition for the color change */
         transition: background-color 0.3s ease;
       }
 
-      /* ADDED: This makes the whole bar turn blue when you hover over it */
+      /* Hover: The whole bar turns blue */
       .top-nav:hover {
         background-color: #1f6feb; 
       }
 
       /* The Links */
       .top-nav a {
-        color: #c9d1d9; /* Light Text */
+        color: #c9d1d9;
         text-decoration: none;
         font-weight: bold;
         font-size: 1.05rem;
-        margin: 0 20px; /* Spacing between words */
+        margin: 0 20px;
         padding: 5px 10px;
         border-radius: 6px;
         transition: background 0.2s, color 0.2s;
       }
 
-      /* Link Hover Effect */
+      /* Hover: Links turn white with a slight background tint */
       .top-nav a:hover {
-        background-color: rgba(255, 255, 255, 0.2); /* Changed to slight white tint so it's visible on blue */
+        background-color: rgba(255, 255, 255, 0.2); 
         color: #ffffff;
         text-decoration: none;
       }
@@ -63,4 +61,23 @@
 
     <section class="page-header">
       <h1 class="project-name">{{ site.title | default: site.github.repository_name }}</h1>
-      <h2 class="project-tagline">{{ site.description |
+      <h2 class="project-tagline">{{ site.description | default: site.github.project_tagline }}</h2>
+      
+      {% if site.github.is_project_page %}
+        <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
+      {% endif %}
+    </section>
+
+    <section class="main-content">
+      {{ content }}
+
+      <footer class="site-footer">
+        <span class="site-footer-owner">
+          <a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a>
+          is maintained by
+          <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>.
+        </span>
+      </footer>
+    </section>
+  </body>
+</html>
