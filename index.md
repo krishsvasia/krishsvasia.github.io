@@ -32,15 +32,15 @@ title: Home
   <div style="flex: 1; min-width: 300px;">
     <h3 style="color: white; border-bottom: 1px solid #30363d; padding-bottom: 10px; margin-bottom: 15px;">Awards</h3>
     <div style="margin-bottom: 15px;">
-      <strong style="color: #ffd700;">Senior Kangaroo Qualifier</strong><br>
+      <strong style="color: #db61a2;">UKMT Senior Kangaroo Qualifier</strong><br>
       <span style="color: #8b949e; font-size: 0.9rem;">
-        Top 5% of participants nationwide.
+        Invited merit round for high scorers (Top 25% of Gold tier).
       </span>
     </div>
     <div>
-      <strong style="color: #c9d1d9;">3x UKMT Senior Maths Challenge (Gold)</strong><br>
+      <strong style="color: #ffd700;">UKMT Senior Maths Challenge (Gold)</strong><br>
       <span style="color: #8b949e; font-size: 0.9rem;">
-        Top 8% of participants nationwide.
+        Top 6% of participants nationwide.
       </span>
     </div>
 
