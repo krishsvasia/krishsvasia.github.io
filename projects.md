@@ -7,9 +7,15 @@ permalink: /projects/
 <style>
   .project-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 25px; /* Nice spacing between cards */
+    grid-template-columns: 1fr 1fr 1fr; 
+    gap: 30px;
     margin-bottom: 40px;
+  }
+
+  @media (max-width: 900px) {
+    .project-grid {
+      grid-template-columns: 1fr; 
+    }
   }
 
   .project-card 
