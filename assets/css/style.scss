@@ -1,41 +1,39 @@
 ---
 ---
-
-/* Import the original Cayman theme */
 @import "{{ site.theme }}";
 
-/* 1. LAYOUT: Widen the page to use the empty space */
 .main-content {
-  max-width: 1400px; /* WAS 900px or 60rem. Now it's wide. */
+  max-width: 1400px !important;
   margin: 0 auto;
   padding: 2rem 2rem;
 }
 
-/* 2. DARK MODE COLORS */
 body {
-  background-color: #0d1117; /* GitHub Dark Dimmed */
-  color: #c9d1d9;            /* Light Grey Text */
+  background-color: #0d1117 !important;
+  color: #c9d1d9 !important;
 }
 
-/* Header Gradient */
 .page-header {
   background-image: linear-gradient(120deg, #161b22, #0d1117);
   background-color: #0d1117;
-  padding: 3rem 4rem; /* More padding for the wide header */
+  padding: 3rem 4rem;
 }
 
-/* Headings & Text */
-h1, h2, h3, h4, h5, h6 { color: #ffffff; }
-p, li { color: #c9d1d9; }
-a { color: #58a6ff; }
-
-/* Code Blocks */
-code {
-  background-color: #161b22;
-  border-radius: 3px;
-  color: #ff7b72; 
+h1, h2, h3, h4, h5, h6, 
+.project-name, .project-tagline {
+  color: #ffffff !important;
 }
-pre {
-  background-color: #161b22;
-  border: 1px solid #30363d;
+
+a {
+  color: #58a6ff !important;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+pre, code {
+  background-color: #161b22 !important;
+  border: 1px solid #30363d !important;
+  color: #ff7b72 !important; 
 }
