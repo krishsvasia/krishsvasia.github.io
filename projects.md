@@ -94,7 +94,7 @@ permalink: /projects/
       <p class="desc-text">High-throughput C++20 library for parsing ITCH binary market data. Benchmarking <code>mmap</code> vs standard I/O.</p>
       <p class="tech-stack">C++26 • Linux API • Perf</p>
     </div>
-    <a href="#" class="card-link">View Code →</a>
+    <a href="#" class="card-link">View Code</a>
   </div>
 
   <div class="project-card">
@@ -104,7 +104,7 @@ permalink: /projects/
         <p class="desc-text">Statistical arbitrage strategy using an adaptive noise algorithm for learning. Also includes circuit breaker logic and a transaction cost engine.</p>
         <p class="tech-stack">Python • Pandas • NumPy</p>
       </div>
-      <a href="https://github.com/krishsvasia/kalman-filter-pairs-trading" class="card-link">View Code →</a>
+      <a href="https://github.com/krishsvasia/kalman-filter-pairs-trading" class="card-link">View Code</a>
     </div>
 
 </div>
@@ -122,7 +122,7 @@ permalink: /projects/
       <p class="desc-text">Deep dive into derivatives pricing, Call/Put Parity, and The Greeks (Delta/Gamma) for risk management logic.</p>
       <p class="tech-stack">Domain Knowledge • Finance</p>
     </div>
-    <a href="#" class="card-link">View Certificate →</a>
+    <a href="#" class="card-link">View Certificate</a>
   </div>
 
 </div>
