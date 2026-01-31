@@ -88,16 +88,6 @@ permalink: /projects/
 <div class="project-grid">
 
   <div class="project-card">
-    <div>
-      <span class="status-tag tag-wip">In Progress</span>
-      <h3>Zero-Copy Parser</h3>
-      <p class="desc-text">High-throughput C++20 library for parsing ITCH binary market data. Benchmarking <code>mmap</code> vs standard I/O.</p>
-      <p class="tech-stack">C++26 • Linux API • Perf</p>
-    </div>
-    <a href="#" class="card-link">View Code</a>
-  </div>
-
-  <div class="project-card">
       <div>
         <span class="status-tag tag-wip">In Progress</span>
         <h3>Adaptive Kalman Filter</h3>
