@@ -63,6 +63,7 @@ permalink: /devlog/
 
   .read-btn:hover {
     background: #30363d;
+    text-decoration: none;
   }
 </style>
 
@@ -80,7 +81,7 @@ permalink: /devlog/
     <p class="desc-text">
       {{ post.excerpt | strip_html | truncatewords: 40 }}
     </p>
-    <a href="{{ post.url }}" class="read-btn">Read Entry &rarr;</a>
+    <a href="{{ post.url }}" class="read-btn">Read Entry</a>
   </div>
   {% endfor %}
 
