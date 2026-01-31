@@ -45,6 +45,7 @@ title: Home
     font-size: 0.85rem;
     font-weight: bold;
     color: #c9d1d9;
+    text-transform: capitalize;
   }
 
   .status-tag {
@@ -71,10 +72,13 @@ title: Home
     border-radius: 6px;
     font-weight: bold;
     border: 1px solid #30363d;
-    text-decoration: none !important;
+    text-decoration: none !important; /* Removes default underline */
     margin-top: 20px;
   }
-  .card-link:hover { background: #30363d; }
+  .card-link:hover { 
+    background: #30363d;
+    text-decoration: none !important; /* Removes underline on hover */
+  }
   
   /* Section Headers for the cards */
   .card-header {
@@ -143,26 +147,32 @@ title: Home
   <div class="project-card">
     <div>
       <span class="status-tag tag-wip">In Progress</span>
-      <h3>Adaptive Kalman Filter</h3>
+      <h3>Systems Programming</h3>
       <p class="desc-text">
-        Statistical arbitrage engine using a Kalman Filter to track the relationship between two tickers on the market. Currently adding more features, such as and adaptive noise algorithm for learning.
+        Deep dive into C++20 memory management. Currently building a Zero-Copy Parser for ITCH market data to minimize latency.
       </p>
-      <p class="tech-stack">Python • Pandas • NumPy</p>
+      <p class="tech-stack">C++ • Pointers • Linux API</p>
     </div>
-    <a href="/projects/" class="card-link">View Projects</a>
+    <a href="/projects/" class="card-link">View Roadmap</a>
   </div>
 
   <h2 class="card-header">Latest Devlog</h2>
+  
+  {% assign latest_post = site.posts.first %}
+  {% if latest_post %}
   <div class="project-card">
     <div>
-      <span class="status-tag tag-new">Jan 31, 2026</span>
-      <h3>Devlog 0: Setting the Foundation</h3>
+      <span class="status-tag tag-new">{{ latest_post.date | date: "%b %d, %Y" }}</span>
+      <h3>{{ latest_post.title }}</h3>
       <p class="desc-text">
-        My first weekly log. Reflections on completing the Akuna Options 101 course, my roadmap for learning C++26, and plans for my Kalman Filter.
+        {{ latest_post.excerpt | strip_html | truncatewords: 30 }}
       </p>
-      <p class="tech-stack">Journal • C++ • Finance</p>
+      <p class="tech-stack">
+        {{ latest_post.categories | join: " • " }}
+      </p>
     </div>
-    <a href="/devlog" class="card-link">View Devlog</a>
+    <a href="{{ latest_post.url }}" class="card-link">Read Entry</a>
   </div>
+  {% endif %}
 
 </div>
