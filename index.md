@@ -105,42 +105,6 @@ title: Home
   </div>
 </div>
 
-<div style="margin-top: 30px; display: flex; gap: 30px; flex-wrap: wrap;">
-
-  <div style="flex: 1; min-width: 300px;">
-    <h3 style="color: white; border-bottom: 1px solid #30363d; padding-bottom: 10px; margin-bottom: 15px;">Education</h3> 
-    <div style="margin-bottom: 15px;">
-      <strong style="color: #c9d1d9; font-size: 1.1rem;">BSc Artificial Intelligence & Computer Science</strong><br>
-      <span style="color: #8b949e;">University of Birmingham</span>
-    </div>
-    <div>
-      <strong style="color: #c9d1d9; font-size: 1.1rem;">A-Levels</strong><br>
-      <span style="color: #8b949e; font-size: 0.9rem;">
-       Mathematics (A), Computer Science (A), Physics (A)
-      </span>
-    </div>
-  </div>
-
-  <div style="flex: 1; min-width: 300px;">
-    <h3 style="color: white; border-bottom: 1px solid #30363d; padding-bottom: 10px; margin-bottom: 15px;">Awards</h3>     
-    <div style="margin-bottom: 15px;">
-      <strong style="color: #c9d1d9;">Senior Kangaroo Qualifier</strong><br>
-      <span style="color: #8b949e; font-size: 0.9rem;">
-       Invited merit round for high scorers.
-      </span>
-    </div>
-    <div>
-      <strong style="color: #c9d1d9;">3x UKMT Maths Challenge Gold Award</strong><br>
-      <span style="color: #8b949e; font-size: 0.9rem;">
-       Top 8% of participants nationwide.
-      </span>
-    </div>
-  </div>
-
-</div>
-
-<hr style="border-color: #30363d; margin: 40px 0;">
-
 <div class="cards-container">
 
   <h2 class="card-header">Current Program Focus</h2>
