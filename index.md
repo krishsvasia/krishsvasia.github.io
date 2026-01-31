@@ -156,13 +156,13 @@ title: Home
   <div class="project-card">
     <div>
       <span class="status-tag tag-new">Jan 31, 2026</span>
-      <h3>Devlog 0: The Systems Journey Begins</h3>
+      <h3>Devlog 0: Setting the Foundation</h3>
       <p class="desc-text">
-        Setting the stage for a deep dive into High-Frequency Trading systems. Defining the weekly roadmap, accountability goals, and my first technical target: the Zero-Copy Parser.
+        My first weekly log. Reflections on completing the Akuna Options 101 course, my roadmap for learning C++26, and the start of my Adaptive Kalman Filter.
       </p>
-      <p class="tech-stack">Roadmap • C++ • HFT</p>
+      <p class="tech-stack">Journal • C++ • Finance</p>
     </div>
-    <a href="/devlog/devlog-0-journey-begins" class="card-link">Read Entry</a>
+    <a href="/devlog/devlog-0-intro-plans" class="card-link">Read Entry</a>
   </div>
 
 </div>
