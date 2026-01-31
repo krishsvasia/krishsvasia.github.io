@@ -143,13 +143,13 @@ title: Home
   <div class="project-card">
     <div>
       <span class="status-tag tag-wip">In Progress</span>
-      <h3>Systems Programming</h3>
+      <h3>Adaptive Kalman Filter</h3>
       <p class="desc-text">
-        Deep dive into C++20 memory management. Currently building a Zero-Copy Parser for ITCH market data to minimize latency.
+        Statistical arbitrage engine using a Kalman Filter to track the relationship between two tickers on the market. Currently adding more features, such as and adaptive noise algorithm for learning.
       </p>
-      <p class="tech-stack">C++ • Pointers • Linux API</p>
+      <p class="tech-stack">Python • Pandas • NumPy</p>
     </div>
-    <a href="/projects/" class="card-link">View Roadmap</a>
+    <a href="/projects/" class="card-link">View Projects</a>
   </div>
 
   <h2 class="card-header">Latest Devlog</h2>
@@ -158,11 +158,11 @@ title: Home
       <span class="status-tag tag-new">Jan 31, 2026</span>
       <h3>Devlog 0: Setting the Foundation</h3>
       <p class="desc-text">
-        My first weekly log. Reflections on completing the Akuna Options 101 course, my roadmap for learning C++26, and the start of my Adaptive Kalman Filter.
+        My first weekly log. Reflections on completing the Akuna Options 101 course, my roadmap for learning C++26, and plans for my Kalman Filter.
       </p>
       <p class="tech-stack">Journal • C++ • Finance</p>
     </div>
-    <a href="/devlog/devlog-0-intro-plans" class="card-link">Read Entry</a>
+    <a href="/devlog/devlog-0-intro-plans" class="card-link">View Devlogs</a>
   </div>
 
 </div>
