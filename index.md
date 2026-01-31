@@ -162,7 +162,7 @@ title: Home
       </p>
       <p class="tech-stack">Journal • C++ • Finance</p>
     </div>
-    <a href="/devlog" class="card-link">View Devlogs</a>
+    <a href="/devlog" class="card-link">View Devlog</a>
   </div>
 
 </div>
