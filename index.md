@@ -3,82 +3,119 @@ layout: default
 title: Home
 ---
 
-<div style="margin-bottom: 50px;">
-  <h1 style="font-size: 2.5rem; margin-bottom: 20px; color: white;">About Me</h1>
+<style>
+  /* --- Homepage Specific Styles --- */
+
+  /* Centers the content and limits width */
+  .home-container {
+    max-width: 800px;
+    margin: 0 auto; 
+  }
+
+  /* Card Styling (Matches Projects Page) */
+  .project-card {
+    background-color: #21262d !important;
+    border: 1px solid #30363d;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s;
+    margin-bottom: 50px; /* Space between the two sections */
+  }
+
+  .project-card:hover {
+    transform: translateY(-5px);
+    border-color: #58a6ff;
+  }
+
+  /* Headings */
+  h2 {
+    margin-bottom: 15px;
+    border-bottom: none; /* Removes default Jekyll underline */
+    color: #c9d1d9;
+  }
+
+  /* Text Styles */
+  .project-card h3 {
+    margin-top: 15px;
+    font-size: 1.4rem;
+    color: #ffffff !important;
+  }
+
+  .desc-text {
+    font-size: 0.95rem;
+    color: #8b949e;
+    line-height: 1.5;
+    margin-bottom: 15px;
+  }
+
+  .tech-stack {
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: #c9d1d9;
+  }
+
+  /* Tags */
+  .status-tag {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 0.75em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+  }
   
-  <p style="font-size: 1.1rem; line-height: 1.8; color: #c9d1d9;">
-    I am an Artificial Intelligence and Computer Science student at the University of Birmingham with strong academic performance and I am currently building my experience in development through my own personal projects. I am experienced in collaborative environments and am adaptable through customer-facing roles, improving my communication, teamwork, and problem-solving skills. I am looking forward to learning more about AI and Software Engineering, and aim to become a part of impactful projects related to these in the future.
-  </p>
+  .tag-wip { background: rgba(210, 153, 34, 0.15); color: #d29922; border: 1px solid #d29922; }
+  .tag-new { background: rgba(88, 166, 255, 0.15); color: #58a6ff; border: 1px solid #58a6ff; }
 
-  <div style="margin-top: 25px; padding: 20px; background: #161b22; border: 1px solid #30363d; border-radius: 8px;">
-    <p style="margin: 0; line-height: 1.8;">
-      <b>Location:</b> Birmingham, UK<br>
-      <b>Email:</b> <a href="mailto:krishsvasia@gmail.com">krishsvasia@gmail.com</a><br>
-      <b>Links:</b> <a href="https://www.linkedin.com/in/krishvasia/">LinkedIn</a> | <a href="https://github.com/krishsvasia">GitHub</a> | <a href="./CV.pdf">Download CV</a>
-    </p>
-  </div>
-</div>
+  /* Buttons */
+  .card-link {
+    display: block;
+    text-align: center;
+    background: #0d1117;
+    color: #58a6ff !important;
+    padding: 12px;
+    border-radius: 6px;
+    font-weight: bold;
+    border: 1px solid #30363d;
+    text-decoration: none !important;
+    margin-top: 20px;
+  }
+  .card-link:hover { 
+    background: #30363d; 
+  }
+</style>
 
-<div style="margin-top: 30px; display: flex; gap: 30px; flex-wrap: wrap;">
-  
-  <div style="flex: 1; min-width: 300px;">
-    <h3 style="color: white; border-bottom: 1px solid #30363d; padding-bottom: 10px; margin-bottom: 15px;">Education</h3> 
-    <div style="margin-bottom: 15px;">
-      <strong style="color: #c9d1d9; font-size: 1.1rem;">BSc Artificial Intelligence & Computer Science</strong><br>
-      <span style="color: #8b949e;">University of Birmingham</span>
-    </div>
+<div class="home-container">
+
+  <h2>Current Program Focus</h2>
+  <div class="project-card">
     <div>
-      <strong style="color: #c9d1d9; font-size: 1.1rem;">A-Levels</strong><br>
-      <span style="color: #8b949e; font-size: 0.9rem;">
-        Mathematics (A), Computer Science (A), Physics (A)
-      </span>
+      <span class="status-tag tag-wip">In Progress</span>
+      <h3>Systems Programming</h3>
+      <p class="desc-text">
+        Deep dive into C++20 memory management. Currently building a Zero-Copy Parser for ITCH market data to minimize latency.
+      </p>
+      <p class="tech-stack">C++ • Pointers • Linux API</p>
     </div>
+    <a href="/projects/" class="card-link">View Roadmap</a>
   </div>
-  <div style="flex: 1; min-width: 300px;">
-    <h3 style="color: white; border-bottom: 1px solid #30363d; padding-bottom: 10px; margin-bottom: 15px;">Awards</h3>    
-    <div style="margin-bottom: 15px;">
-      <strong style="color: #c9d1d9;">Senior Kangaroo Qualifier</strong><br>
-      <span style="color: #8b949e; font-size: 0.9rem;">
-        Invited merit round for high scorers.
-      </span>
-    </div>
+
+  <h2>Latest Devlog</h2>
+  <div class="project-card">
     <div>
-      <strong style="color: #c9d1d9;">3x UKMT Maths Challenge Gold Award</strong><br>
-      <span style="color: #8b949e; font-size: 0.9rem;">
-        Top 8% of participants nationwide.
-      </span>
+      <span class="status-tag tag-new">Jan 30, 2026</span>
+      <h3>Building a Zero-Copy Parser</h3>
+      <p class="desc-text">
+        Optimizing memory access by eliminating redundant data copying. A look into <code>mmap</code> vs standard I/O performance.
+      </p>
+      <p class="tech-stack">Systems • Optimization</p>
     </div>
+    <a href="/devlog/building-zero-copy-parser" class="card-link">Read Entry</a>
   </div>
-</div>
-<hr style="border-color: #30363d; margin: 40px 0;">
 
-
-<div style="background: #161b22; border: 1px solid #30363d; border-radius: 12px; padding: 40px; margin-bottom: 60px;">
-  <span style="color: #58a6ff; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; font-size: 0.8rem;">Current Focus</span>
-  <h2 style="margin-top: 10px; color: white !important;">Zero-Copy Market Data Parser</h2>
-  <p style="font-size: 1.1rem; color: #8b949e; max-width: 800px;">
-    A high-performance C++ library designed to parse NASDAQ ITCH 5.0 market data protocols. 
-    It bypasses the kernel's page cache using <code>mmap</code> to achieve nanosecond-scale parsing latency.
-  </p>
-  <div style="margin-top: 25px;">
-    <a href="/projects/" class="btn" style="border: 1px solid #58a6ff;">View Project Details</a>
-  </div>
-<section class="devlog-container">
-    <h2 class="section-title">Latest Devlog</h2>
-    <div class="devlog-card">
-        <div class="devlog-meta">
-            <span class="devlog-date">Jan 31, 2026</span>
-            <span class="devlog-tag">Systems</span>
-        </div>
-        <h3 class="devlog-title">
-            <a href="/devlog/building-zero-copy-parser">Building a Zero-Copy Parser in C++</a>
-        </h3>
-        <p class="devlog-excerpt">
-            Optimizing memory access by eliminating redundant data copying. A deep dive into pointers, references, and memory arenas...
-        </p>
-        <a href="/devlog/building-zero-copy-parser" class="read-more-btn">
-            Read Entry &rarr;
-        </a>
-    </div>
-</section>
 </div>
