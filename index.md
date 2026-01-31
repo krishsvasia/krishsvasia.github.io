@@ -61,6 +61,24 @@ title: Home
     It bypasses the kernel's page cache using <code>mmap</code> to achieve nanosecond-scale parsing latency.
   </p>
   <div style="margin-top: 25px;">
-    <a href="/projects/" class="btn" style="border: 1px solid #58a6ff;">View Project Details →</a>
+    <a href="/projects/" class="btn" style="border: 1px solid #58a6ff;">View Project Details</a>
   </div>
+<section class="devlog-container">
+    <h2 class="section-title">Latest Devlog</h2>
+    <div class="devlog-card">
+        <div class="devlog-meta">
+            <span class="devlog-date">Jan 31, 2026</span>
+            <span class="devlog-tag">Systems</span>
+        </div>
+        <h3 class="devlog-title">
+            <a href="/devlog/building-zero-copy-parser">Building a Zero-Copy Parser in C++</a>
+        </h3>
+        <p class="devlog-excerpt">
+            Optimizing memory access by eliminating redundant data copying. A deep dive into pointers, references, and memory arenas...
+        </p>
+        <a href="/devlog/building-zero-copy-parser" class="read-more-btn">
+            Read Entry &rarr;
+        </a>
+    </div>
+</section>
 </div>
