@@ -112,7 +112,7 @@ permalink: /projects/
       <p class="desc-text">Deep dive into derivatives pricing, Call/Put Parity, and The Greeks (Delta/Gamma) for risk management logic.</p>
       <p class="tech-stack">Domain Knowledge • Finance</p>
     </div>
-    <a href="https://github.com/krishsvasia/krishsvasia.github.io/blob/main/Akuna-Options101-Certificate.pdf" class="card-link">View Certificate</a>
+    <a href="https://krishsvasia.github.io/projects/Akuna-Options101-Certificate.pdf" class="card-link">View Certificate</a>
   </div>
 
 </div>
